@@ -15,6 +15,7 @@
 		1EACBEE62C00FC9500B58B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EACBEE52C00FC9500B58B12 /* Assets.xcassets */; };
 		1EACBEE92C00FC9500B58B12 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1EACBEE82C00FC9500B58B12 /* Base */; };
 		1EACBEEC2C00FC9500B58B12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EACBEEB2C00FC9500B58B12 /* main.m */; };
+		E620435081413B59591A58B5 /* libPods-MoneyMorphApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2717998331BCA0FC9B54635F /* libPods-MoneyMorphApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,9 @@
 		1EACBEE82C00FC9500B58B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EACBEEA2C00FC9500B58B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EACBEEB2C00FC9500B58B12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2717998331BCA0FC9B54635F /* libPods-MoneyMorphApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyMorphApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654ED536C6EB76B131FBFBD8 /* Pods-MoneyMorphApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMorphApp.debug.xcconfig"; path = "Target Support Files/Pods-MoneyMorphApp/Pods-MoneyMorphApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F05DD316211275B063BC6C11 /* Pods-MoneyMorphApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMorphApp.release.xcconfig"; path = "Target Support Files/Pods-MoneyMorphApp/Pods-MoneyMorphApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E620435081413B59591A58B5 /* libPods-MoneyMorphApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +54,8 @@
 			children = (
 				1EACBED52C00FC9100B58B12 /* MoneyMorphApp */,
 				1EACBED42C00FC9100B58B12 /* Products */,
+				E0788A949B6BB9D262677381 /* Pods */,
+				A29FC5EF1B2FD1A7B2E71572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,24 @@
 			path = MoneyMorphApp;
 			sourceTree = "<group>";
 		};
+		A29FC5EF1B2FD1A7B2E71572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2717998331BCA0FC9B54635F /* libPods-MoneyMorphApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0788A949B6BB9D262677381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				654ED536C6EB76B131FBFBD8 /* Pods-MoneyMorphApp.debug.xcconfig */,
+				F05DD316211275B063BC6C11 /* Pods-MoneyMorphApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EACBEEF2C00FC9500B58B12 /* Build configuration list for PBXNativeTarget "MoneyMorphApp" */;
 			buildPhases = (
+				0E67C235A08EDE5A2181979B /* [CP] Check Pods Manifest.lock */,
 				1EACBECF2C00FC9100B58B12 /* Sources */,
 				1EACBED02C00FC9100B58B12 /* Frameworks */,
 				1EACBED12C00FC9100B58B12 /* Resources */,
+				6A06EE2DD884624F19C37190 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E67C235A08EDE5A2181979B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyMorphApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A06EE2DD884624F19C37190 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyMorphApp/Pods-MoneyMorphApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyMorphApp/Pods-MoneyMorphApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyMorphApp/Pods-MoneyMorphApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EACBECF2C00FC9100B58B12 /* Sources */ = {
@@ -297,6 +366,7 @@
 		};
 		1EACBEF02C00FC9500B58B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654ED536C6EB76B131FBFBD8 /* Pods-MoneyMorphApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,6 +394,7 @@
 		};
 		1EACBEF12C00FC9500B58B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05DD316211275B063BC6C11 /* Pods-MoneyMorphApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
