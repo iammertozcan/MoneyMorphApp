@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = @[@"0.0 EUR", @"0.0 JPY", @"0.0 BGN", @"0.0 CZK", @"0.0 DKK", @"0.0 GBP", @"0.0 HUF", @"0.0 PLN", @"0.0 RON", @"0.0 SEK", @"0.0 CHF", @"0.0 INR", @"0.0 MXN"];
+    self.data = @[@"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN"];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
