@@ -81,6 +81,11 @@
                             <constraint firstItem="aNU-sN-SR1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ts5-sR-Dyq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="convertButton" destination="1F9-Y0-Gg9" id="e2f-X8-iHs"/>
+                        <outlet property="inputField" destination="oOM-NV-H8e" id="uAF-De-WSQ"/>
+                        <outlet property="tableView" destination="z7Y-cY-b2J" id="XFY-R0-GMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
