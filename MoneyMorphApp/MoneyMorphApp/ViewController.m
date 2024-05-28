@@ -66,23 +66,7 @@
     self.convertButton.enabled = YES;
     
     double inputValue = [self.inputField.text doubleValue];
-        
-        // Calculate the converted values
-        double euroValue = inputValue * currencies.EUR;
-        double jpyValue = inputValue * currencies.JPY;
-        double bgnValue = inputValue * currencies.BGN;
-        double czkValue = inputValue * currencies.CZK;
-        double dkkValue = inputValue * currencies.DKK;
-        double gbpValue = inputValue * currencies.GBP;
-        double hufValue = inputValue * currencies.HUF;
-        double plnValue = inputValue * currencies.PLN;
-        double ronValue = inputValue * currencies.RON;
-        double sekValue = inputValue * currencies.SEK;
-        double chfValue = inputValue * currencies.CHF;
-        double inrValue = inputValue * currencies.INR;
-        double mxnValue = inputValue * currencies.MXN;
-    double tryValue = inputValue * currencies.TRY;
-        
+    
         // Update the data array with the new values
     self.data = @[
             [NSString stringWithFormat:@"%.2f EUR", inputValue * currencies.EUR],
