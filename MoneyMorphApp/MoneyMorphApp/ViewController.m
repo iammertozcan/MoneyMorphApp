@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = @[@"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN"];
+    self.data = @[@"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -81,22 +81,24 @@
         double chfValue = inputValue * currencies.CHF;
         double inrValue = inputValue * currencies.INR;
         double mxnValue = inputValue * currencies.MXN;
+    double tryValue = inputValue * currencies.TRY;
         
         // Update the data array with the new values
-        self.data = @[
-            [NSString stringWithFormat:@"%.2f EUR", euroValue],
-            [NSString stringWithFormat:@"%.2f JPY", jpyValue],
-            [NSString stringWithFormat:@"%.2f BGN", bgnValue],
-            [NSString stringWithFormat:@"%.2f CZK", czkValue],
-            [NSString stringWithFormat:@"%.2f DKK", dkkValue],
-            [NSString stringWithFormat:@"%.2f GBP", gbpValue],
-            [NSString stringWithFormat:@"%.2f HUF", hufValue],
-            [NSString stringWithFormat:@"%.2f PLN", plnValue],
-            [NSString stringWithFormat:@"%.2f RON", ronValue],
-            [NSString stringWithFormat:@"%.2f SEK", sekValue],
-            [NSString stringWithFormat:@"%.2f CHF", chfValue],
-            [NSString stringWithFormat:@"%.2f INR", inrValue],
-            [NSString stringWithFormat:@"%.2f MXN", mxnValue]
+    self.data = @[
+            [NSString stringWithFormat:@"%.2f EUR", inputValue * currencies.EUR],
+            [NSString stringWithFormat:@"%.2f JPY", inputValue * currencies.JPY],
+            [NSString stringWithFormat:@"%.2f BGN", inputValue * currencies.BGN],
+            [NSString stringWithFormat:@"%.2f CZK", inputValue * currencies.CZK],
+            [NSString stringWithFormat:@"%.2f DKK", inputValue * currencies.DKK],
+            [NSString stringWithFormat:@"%.2f GBP", inputValue * currencies.GBP],
+            [NSString stringWithFormat:@"%.2f HUF", inputValue * currencies.HUF],
+            [NSString stringWithFormat:@"%.2f PLN", inputValue * currencies.PLN],
+            [NSString stringWithFormat:@"%.2f RON", inputValue * currencies.RON],
+            [NSString stringWithFormat:@"%.2f SEK", inputValue * currencies.SEK],
+            [NSString stringWithFormat:@"%.2f CHF", inputValue * currencies.CHF],
+            [NSString stringWithFormat:@"%.2f INR", inputValue * currencies.INR],
+            [NSString stringWithFormat:@"%.2f MXN", inputValue * currencies.MXN],
+            [NSString stringWithFormat:@"%.2f TRY", inputValue * currencies.TRY]
         ];
         
         // Reload the table view to reflect the updated data

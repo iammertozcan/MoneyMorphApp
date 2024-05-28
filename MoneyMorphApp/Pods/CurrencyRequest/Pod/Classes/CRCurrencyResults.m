@@ -97,13 +97,12 @@
 @dynamic CHF;
 @dynamic INR;
 @dynamic MXN;
+@dynamic TRY;
 
 - (id)valueForUndefinedKey:(NSString *)key {
-    
     if ([[[self class] supportedCurrencies] containsObject:key]) {
         return @([self _rateForCurrency:key]);
     }
-    
     return [super valueForUndefinedKey:key];
 }
 
@@ -139,7 +138,7 @@ double rateGetter(id self, SEL _cmd) {
 
 + (NSSet *)supportedCurrencies {
     return [NSSet setWithObjects:@"USD", @"EUR", @"JPY", @"BGN", @"CZK", @"DKK",
-            @"GBP", @"HUF", @"PLN", @"RON", @"SEK", @"CHF", @"INR", @"MXN", nil];
+            @"GBP", @"HUF", @"PLN", @"RON", @"SEK", @"CHF", @"INR", @"MXN", @"TRY", nil];
 }
 
 

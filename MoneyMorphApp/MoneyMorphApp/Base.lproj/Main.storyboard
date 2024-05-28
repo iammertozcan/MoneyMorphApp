@@ -28,6 +28,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="xrW-Pw-3kC"/>
                                 </constraints>
+                                <color key="tintColor" red="0.023335864769999999" green="0.5028505325" blue="0.0018568815429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Convert">
                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>

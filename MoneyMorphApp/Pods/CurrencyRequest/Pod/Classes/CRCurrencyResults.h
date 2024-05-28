@@ -28,6 +28,7 @@
 @property (readonly, nonatomic) double INR;
 @property (readonly, nonatomic) double MXN;
 @property (readonly, nonatomic) double ISK;
+@property (readonly, nonatomic) double TRY;
 
 + (NSSet *)supportedCurrencies;
 
