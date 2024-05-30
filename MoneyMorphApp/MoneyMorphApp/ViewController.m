@@ -67,7 +67,38 @@
 
 - (IBAction)deleteButtonTapped:(id)sender {
     self.inputField.text = @""; // Clear the text in the input field
-    self.data = @[@"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    if ([self.selectedCurrency isEqualToString:@"USD (US Dollar)"]) {
+        self.data = @[@"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"EUR (Euro)"]) {
+        self.data = @[@"0.00 USD", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"JPY (Yen)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"BGN (Bulgarian Lev)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"CZK (Czech Koruna)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"DKK (Danish Krone)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"GBP (Pound Sterling)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"HUF (Forint)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"PLN (Zloty)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"RON (Romanian Leu)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"SEK (Swedish Krona)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 CHF", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"CHF (Swiss Franc)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 INR", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"INR (Indian Rupee)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 MXN", @"0.00 TRY"];
+    } else if ([self.selectedCurrency isEqualToString:@"MXN (Mexican Peso)"]) {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 TRY"];
+    } else {
+        self.data = @[@"0.00 USD", @"0.00 EUR", @"0.00 JPY", @"0.00 BGN", @"0.00 CZK", @"0.00 DKK", @"0.00 GBP", @"0.00 HUF", @"0.00 PLN", @"0.00 RON", @"0.00 SEK", @"0.00 CHF", @"0.00 INR", @"0.00 MXN"];
+    }
+    
     self.deleteButton.enabled = YES;
     [self.tableView reloadData];
 }
