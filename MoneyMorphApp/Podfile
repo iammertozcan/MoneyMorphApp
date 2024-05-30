@@ -4,4 +4,6 @@ target 'MoneyMorphApp' do
 
 pod 'CurrencyRequest' , '~> 0.1'
 
+pod 'ActionSheetPicker-3.0', '~> 2.7.4'
+
 end

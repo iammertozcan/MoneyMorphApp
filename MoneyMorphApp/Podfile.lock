@@ -1,16 +1,20 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.7.4)
   - CurrencyRequest (0.2.1)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.7.4)
   - CurrencyRequest (~> 0.1)
 
 SPEC REPOS:
   trunk:
+    - ActionSheetPicker-3.0
     - CurrencyRequest
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: a380d57270b6b2d321c4add024ba5c466a7f5cfd
   CurrencyRequest: 92588153b6d3cfcd0497d0cdded3bd9ee27a5c3f
 
-PODFILE CHECKSUM: 152f74d817ace9a7d7ed8f611c4d41e058c9e919
+PODFILE CHECKSUM: 493462f41c95c5e3fa2528e06ebd703d85327e7d
 
 COCOAPODS: 1.15.2

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66E7D7BA0316A36BFC781B549F34DA94"
-               BuildableName = "CurrencyRequest.bundle"
-               BlueprintName = "CurrencyRequest-CurrencyRequest"
+               BlueprintIdentifier = "A43B25DDF20FCB9228471F8F5135C866"
+               BuildableName = "libActionSheetPicker-3.0.a"
+               BlueprintName = "ActionSheetPicker-3.0"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
