@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "CurrencyRequest/CRCurrencyRequest.h"
 #import "CurrencyRequest/CRCurrencyResults.h"
-
+#import "ActionSheetPicker-3.0/ActionSheetStringPicker.h"
 @interface ViewController () <CRCurrencyRequestDelegate>
 
 @property (nonatomic) CRCurrencyRequest *req;
@@ -73,31 +73,21 @@
 }
 
 - (IBAction)currencyButtonTapped:(id)sender {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Select Currency"
-                                                                   message:nil
-                                                            preferredStyle:UIAlertControllerStyleActionSheet];
-    
     NSArray *currencies = [self.currencySymbols allKeys];
     
-    for (NSString *currency in currencies) {
-        UIAlertAction *action = [UIAlertAction actionWithTitle:currency
-                                                         style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * _Nonnull action) {
-            self.selectedCurrency = currency;
-            NSString *currencySymbol = self.currencySymbols[currency];
-            [self.currencyButton setTitle:currencySymbol forState:UIControlStateNormal];
-            [self updateInputFieldPlaceholder]; // Update the input field's placeholder
-            NSLog(@"Selected currency: %@", currency);
-        }];
-        [alert addAction:action];
+    [ActionSheetStringPicker showPickerWithTitle:@"Select Currency"
+                                            rows:currencies
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+        NSString *selectedCurrency = currencies[selectedIndex];
+        self.selectedCurrency = selectedCurrency;
+        NSString *currencySymbol = self.currencySymbols[selectedCurrency];
+        [self.currencyButton setTitle:currencySymbol forState:UIControlStateNormal];
+        [self updateInputFieldPlaceholder]; // Update the input field's placeholder
+        NSLog(@"Selected currency: %@", selectedCurrency);
     }
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
-                                                           style:UIAlertActionStyleCancel
-                                                         handler:nil];
-    [alert addAction:cancelAction];
-    
-    [self presentViewController:alert animated:YES completion:nil];
+                                     cancelBlock:nil
+                                          origin:sender];
 }
 
 - (void)updateInputFieldPlaceholder {

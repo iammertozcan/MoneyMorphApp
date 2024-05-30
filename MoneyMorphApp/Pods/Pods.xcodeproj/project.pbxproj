@@ -69,9 +69,9 @@
 		0668A6C56528ABFCDE375FCB0BA61A9F /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
 		1575A3261605B78184C0800C0FBB5482 /* Pods-MoneyMorphApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoneyMorphApp.release.xcconfig"; sourceTree = "<group>"; };
 		161D9AB3FFF4E4F83FF5056CF2B09FD8 /* ActionSheetPicker-3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.debug.xcconfig"; sourceTree = "<group>"; };
-		1695227F9BE6C2F7E5E5B21BAFA09FF6 /* eurofxref-daily-snapshot.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = "eurofxref-daily-snapshot.xml"; path = "Pod/Assets/eurofxref-daily-snapshot.xml"; sourceTree = "<group>"; };
+		1695227F9BE6C2F7E5E5B21BAFA09FF6 /* eurofxref-daily-snapshot.xml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = "eurofxref-daily-snapshot.xml"; path = "Pod/Assets/eurofxref-daily-snapshot.xml"; sourceTree = "<group>"; };
 		190040741E273693CB2A770A35D43D7C /* CRCurrencyRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRCurrencyRequest.h; path = Pod/Classes/CRCurrencyRequest.h; sourceTree = "<group>"; };
-		2076FE0883C383D34B1ED07795B7150E /* CurrencyRequest */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = CurrencyRequest; path = libCurrencyRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2076FE0883C383D34B1ED07795B7150E /* libCurrencyRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurrencyRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DA67CB2D3A9E8267FD0BD255347AB5 /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
 		3809EA7C03FEA39508EFFC4697E6D123 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/SWActionSheet.m; sourceTree = "<group>"; };
 		3BFF20F8CAB0E9958E19A4A5A856A708 /* CurrencyRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyRequest.debug.xcconfig; sourceTree = "<group>"; };
@@ -81,14 +81,14 @@
 		5D2CE2D34472D2AFB8B6EAC61C617C75 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/SWActionSheet.h; sourceTree = "<group>"; };
 		66B2909E441E18F5AA75721EC39A5D91 /* CRCurrencyResults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRCurrencyResults.m; path = Pod/Classes/CRCurrencyResults.m; sourceTree = "<group>"; };
 		6DE74F17F4F5C67B814F2C08DC40BA0C /* CRCurrencyRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRCurrencyRequestDelegate.h; path = Pod/Classes/CRCurrencyRequestDelegate.h; sourceTree = "<group>"; };
-		724C183B8CDEA16F03631AE7FC4B032A /* Pods-MoneyMorphApp */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-MoneyMorphApp"; path = "libPods-MoneyMorphApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724C183B8CDEA16F03631AE7FC4B032A /* libPods-MoneyMorphApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyMorphApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D3D025D78B321004BDFBB0556BB2C4 /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
 		79AF1FD23608B9051D5F2348A2E50AB8 /* Pods-MoneyMorphApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoneyMorphApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7C600DF6E8D8B40F40468CF90188A88F /* CRCurrencyResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRCurrencyResults.h; path = Pod/Classes/CRCurrencyResults.h; sourceTree = "<group>"; };
 		7ECDB600622656025ED55633EE7D80E4 /* CurrencyRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyRequest-prefix.pch"; sourceTree = "<group>"; };
 		8278346DC77F1EFB1AF45306C3838B32 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
 		95AEE81E93A4BBBD0A18FF33484D4153 /* Pods-MoneyMorphApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoneyMorphApp-resources.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB2E57A2CB9353546FC420FCE100174 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
 		A03DE1C6C52AEC3965453DCD65126049 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
 		A904F5AADB403409A94CF28D8C435BEC /* CurrencyRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "CurrencyRequest-Info.plist"; path = "Pod/Assets/CurrencyRequest-Info.plist"; sourceTree = "<group>"; };
@@ -99,13 +99,13 @@
 		D0799A5E0612723F3EE75376FD5BAF0D /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/DistancePickerView.h; sourceTree = "<group>"; };
 		D0891AD63F6DC50479C5C7A11289EF39 /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
 		D2D70139226ED21B45395440924C06AF /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
-		D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "ActionSheetPicker-3.0"; path = "libActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E470A0C684D4FBC08BDF7A28A2A38B /* libActionSheetPicker-3.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C1904326F1368F33AD703D98834D7 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/ActionSheetDatePicker.h; sourceTree = "<group>"; };
 		DA1ED63E345DA77550D59784B471DE36 /* Pods-MoneyMorphApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoneyMorphApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA9E736DA31612F1E45DAACB6B5116E /* CurrencyRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyRequest.release.xcconfig; sourceTree = "<group>"; };
 		E06943BD8DA45459B8D3BE666186C850 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/ActionSheetStringPicker.h; sourceTree = "<group>"; };
 		E5CB6BBF730C478E1B088E06521F3526 /* Pods-MoneyMorphApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoneyMorphApp-dummy.m"; sourceTree = "<group>"; };
-		E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest-CurrencyRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CurrencyRequest-CurrencyRequest"; path = CurrencyRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF1C9EA7282758BC1D1D2D936859C05 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
 		F228A00A4E203DDA3160A222AFE5C103 /* ActionSheetPicker-3.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.release.xcconfig"; sourceTree = "<group>"; };
 		F324C2472646D14E87B945E1FE4A8FFA /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/include/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
@@ -170,7 +170,6 @@
 				3809EA7C03FEA39508EFFC4697E6D123 /* SWActionSheet.m */,
 				7FE292D85836977BA09B082AEACB11B2 /* Support Files */,
 			);
-			name = "ActionSheetPicker-3.0";
 			path = "ActionSheetPicker-3.0";
 			sourceTree = "<group>";
 		};
@@ -193,7 +192,6 @@
 				DE0413BBC071B97D27F46C5FF15EA6D1 /* Resources */,
 				9BE728E2E0DF8896DD0A5B85040319FD /* Support Files */,
 			);
-			name = CurrencyRequest;
 			path = CurrencyRequest;
 			sourceTree = "<group>";
 		};
@@ -234,10 +232,10 @@
 		9E706DEC4C20328F0A356277DA891B23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */,
-				2076FE0883C383D34B1ED07795B7150E /* CurrencyRequest */,
-				E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest-CurrencyRequest */,
-				724C183B8CDEA16F03631AE7FC4B032A /* Pods-MoneyMorphApp */,
+				D6E470A0C684D4FBC08BDF7A28A2A38B /* libActionSheetPicker-3.0.a */,
+				2076FE0883C383D34B1ED07795B7150E /* libCurrencyRequest.a */,
+				E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest.bundle */,
+				724C183B8CDEA16F03631AE7FC4B032A /* libPods-MoneyMorphApp.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,7 +336,7 @@
 			);
 			name = "CurrencyRequest-CurrencyRequest";
 			productName = CurrencyRequest;
-			productReference = E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest-CurrencyRequest */;
+			productReference = E68CCEBC76C29E657264BA6BAA36C07F /* CurrencyRequest.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		7C5D9A598C3E0C1D243A365458B73447 /* CurrencyRequest */ = {
@@ -356,7 +354,7 @@
 			);
 			name = CurrencyRequest;
 			productName = CurrencyRequest;
-			productReference = 2076FE0883C383D34B1ED07795B7150E /* CurrencyRequest */;
+			productReference = 2076FE0883C383D34B1ED07795B7150E /* libCurrencyRequest.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		81F83E045C9C631F286EC02DE77BCA5F /* Pods-MoneyMorphApp */ = {
@@ -375,7 +373,7 @@
 			);
 			name = "Pods-MoneyMorphApp";
 			productName = "Pods-MoneyMorphApp";
-			productReference = 724C183B8CDEA16F03631AE7FC4B032A /* Pods-MoneyMorphApp */;
+			productReference = 724C183B8CDEA16F03631AE7FC4B032A /* libPods-MoneyMorphApp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A43B25DDF20FCB9228471F8F5135C866 /* ActionSheetPicker-3.0 */ = {
@@ -392,7 +390,7 @@
 			);
 			name = "ActionSheetPicker-3.0";
 			productName = "ActionSheetPicker-3.0";
-			productReference = D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */;
+			productReference = D6E470A0C684D4FBC08BDF7A28A2A38B /* libActionSheetPicker-3.0.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -512,7 +510,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CurrencyRequest";
 				IBSC_MODULE = CurrencyRequest;
 				INFOPLIST_FILE = "Target Support Files/CurrencyRequest/ResourceBundle-CurrencyRequest-CurrencyRequest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				PRODUCT_NAME = CurrencyRequest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -530,7 +528,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CurrencyRequest/CurrencyRequest-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -641,7 +639,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -663,7 +661,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -686,7 +684,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CurrencyRequest";
 				IBSC_MODULE = CurrencyRequest;
 				INFOPLIST_FILE = "Target Support Files/CurrencyRequest/ResourceBundle-CurrencyRequest-CurrencyRequest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				PRODUCT_NAME = CurrencyRequest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -704,7 +702,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CurrencyRequest/CurrencyRequest-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
